@@ -48,7 +48,11 @@ public class KustoClient
     private final ClientImpl remoteClient;
     private static final Logger log = Logger.get(KustoClient.class);
     /**
-     * SchemaName -> (TableName -> TableMetadata)
+     * Unlike traditional sqlserver, Azure Data Explorer does not have schemas.
+     * There can be multiple databases in a cluster and tables within a database.
+     * We can map a "database name" to a schema name and tables within the database
+     * to tables in presto.
+     * ADE cluster -> Databases (Presto Schema) -> Tables (Presto table)
      */
     private Map<String, Map<String, KustoTable>> schemas;
 

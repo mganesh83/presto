@@ -19,7 +19,13 @@ import javax.validation.constraints.NotNull;
 
 public class KustoConfig
 {
+    // https://azure.microsoft.com/en-in/services/data-explorer/
+    // clusterPath is typically like: https://<cluster name>.<location>.kusto.windows.net/
     private String clusterPath;
+    // Azure data explorer supports AAD authentication. A new AAD app needs to be created
+    // to access the kusto cluster. Steps for configuration and to get the tenantID, appID
+    // and secret are listed in this link:
+    // https://docs.microsoft.com/en-us/azure/data-explorer/provision-azure-ad-app
     private String appTenantId;
     private String appId;
     private String appSecret;
