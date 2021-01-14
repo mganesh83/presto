@@ -150,6 +150,14 @@
 
         <dependency>
             <groupId>com.facebook.presto</groupId>
+            <artifactId>presto-kusto</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.facebook.presto</groupId>
             <artifactId>presto-atop</artifactId>
             <version>${project.version}</version>
             <type>zip</type>

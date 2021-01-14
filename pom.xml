@@ -150,6 +150,7 @@
         <module>presto-memory-context</module>
         <module>presto-proxy</module>
         <module>presto-kudu</module>
+        <module>presto-kusto</module>
         <module>presto-elasticsearch</module>
         <module>presto-function-namespace-managers</module>
         <module>presto-expressions</module>
@@ -282,6 +283,13 @@
             <dependency>
                 <groupId>com.facebook.presto</groupId>
                 <artifactId>presto-example-http</artifactId>
+                <version>${project.version}</version>
+                <type>zip</type>
+            </dependency>
+
+            <dependency>
+                <groupId>com.facebook.presto</groupId>
+                <artifactId>presto-kusto</artifactId>
                 <version>${project.version}</version>
                 <type>zip</type>
             </dependency>

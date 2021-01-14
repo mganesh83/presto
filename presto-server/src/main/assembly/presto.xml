@@ -105,6 +105,10 @@
             <outputDirectory>plugin/kudu</outputDirectory>
         </fileSet>
         <fileSet>
+            <directory>${project.build.directory}/dependency/presto-kusto-${project.version}</directory>
+            <outputDirectory>plugin/kusto</outputDirectory>
+        </fileSet>
+        <fileSet>
             <directory>${project.build.directory}/dependency/presto-atop-${project.version}</directory>
             <outputDirectory>plugin/atop</outputDirectory>
         </fileSet>
